@@ -1,4 +1,4 @@
 certbot_email: mail@telegin.me
 certbot_hosts:
     - registry.metrologika.telegin.me
-    - cache-registry.metrologika.telegin.me
+#    - cache-registry.metrologika.telegin.me

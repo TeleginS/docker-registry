@@ -4,8 +4,8 @@ services:
     image: nginx:alpine
     restart: always
     ports:
-      - "80:80"
-      - "443:443"
+#      - "80:80"
+      - "5443:5443"
     volumes:
       - /etc/letsencrypt:/etc/letsencrypt:ro
       - /var/www/html:/var/www/html:ro
@@ -15,7 +15,7 @@ services:
       - registry
 
   registry:
-    image: registry:2
+    image: registry:2.6
     restart: always
     volumes:
       - registry:/var/lib/registry
